@@ -7,10 +7,11 @@ using namespace std;
 class Solution {
 public:
     int numIdenticalPairs(vector<int>& nums){
-        vector<int> freq(100);
+        vector<int> freq(100); // 1 2 3 1 1 3 
         int an =0;
         for(auto &it:nums){
-            freq[it-1]++;
+            freq[it-1]++;  // 3 1 2  
+            
         }
         for(auto a:freq){
             an+=(a-1)*(a)/2;

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Solution {
+class Solution { // AAABBAAB
 public:
     bool winnerOfGame(string colors) {
         map<char, int> c;
