@@ -61,7 +61,10 @@ int getMaximumGold(vector<vector<int>>& grid) {
   int ans =0;
   for(int i =0;i<n;i++){
     for(int j =0;j<m;j++){
-      ans = max(ans, dfs(i,j,grid));
+      if(grid[i][j]!=0){
+          ans = max(ans, dfs(i,j,grid));
+      }
+    
 
     }
   }
